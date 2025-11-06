@@ -1,13 +1,106 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Ультра-Дент</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+</head>
+<body>
+<div id="app" class="container">
+
+    <!--      header-->
+    <header class="head">
+        <a class="head__brand" href="/"><img class="head__logo" src="./src/assets/icons/Logo.svg" alt="Логотип"/></a>
+
+        <!--navigation-->
+        <button class="btn nav__toggle" type="button" aria-label="Меню" aria-expanded="false">
+            <span class="icon icon--close"></span>
+            <span class="burger">
+                <span></span><span></span><span></span>
+            </span>
+        </button>
+
+        <div class="head__panel">
+            <nav class="nav" aria-label="Навигация">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#why-us">Почему мы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#place">Где всё происходит</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#how-it-works"> Как это работает</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#reviews">Отзывы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#about-us">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--            work-time-->
+            <div class="work-time" aria-label="Время работы">
+                <span class="work-time__icon" aria-hidden="true"></span>
+                <div class="work-time__text">
+                    <span class="work-time__label">Время работы:</span>
+                    <span class="work-time__value">Ежедневно с 9:00 до 20:00</span>
+                </div>
+            </div>
+
+            <button class="btn submit-application">Оставить заявку</button>
+        </div>
+
+        <button class="btn submit-application">Оставить заявку</button>
+    </header>
+
+    <!--    hero-->
+    <section class="hero">
+
+        <!--        timer-->
+        <div class="timer">
+            <div class="timer__title">всего 35 купонов со скидкой до конца недели</div>
+            <div class="time">
+                <div class="time__title">До конца акции осталось:</div>
+                <div class="time__grid">
+                    <div class="time__cell time__cell--days">
+                        <span class="time__value" id="days">00</span>
+                        <span class="time__unit">дни</span>
+                    </div>
+                    <span class="time__cell--separator">:</span>
+                    <div class="time__cell time__cell--hours">
+                        <span class="time__value" id="hours">00</span>
+                        <span class="time__unit">часов</span>
+                    </div>
+                    <span class="time__cell--separator">:</span>
+                    <div class="time__cell time__cell--minutes">
+                        <span class="time__value" id="minutes">00</span>
+                        <span class="time__unit">минут</span>
+                    </div>
+                    <span class="time__cell--separator">:</span>
+                    <div class="time__cell time__cell--seconds">
+                        <span class="time__value" id="seconds">00</span>
+                        <span class="time__unit">секунд</span>
+                    </div>
+                </div>
+                <div class="time__coupons-left">Купонов осталось: 8 из 35</div>
+            </div>
+        </div>
+
+    </section>
+</div>
+<script type="module" src="/src/main.js"></script>
+</body>
 </html>
