@@ -1,0 +1,41 @@
+.btn {
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    border-radius: var(--btn-radius);
+    cursor: pointer;
+}
+
+@media (hover: hover) {
+    .btn:hover {
+        background-color: rgba(255, 145, 49, 1);
+    }
+}
+
+.btn:active {
+    background-color: rgba(228, 106, 0, 1);
+}
+
+.btn:focus {
+    outline: none
+}
+
+.icon {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    inline-size: 24px;
+    block-size: 24px;
+    display: inline-block;
+    background-color: white;
+    transition: opacity .2s ease, transform .2s ease;
+}
+
+.icon--close {
+    -webkit-mask: url('../assets/icons/close.svg') center/contain no-repeat;
+    mask: url('../assets/icons/close.svg') center/contain no-repeat;
+    opacity: 0;
+    transform: scale(.9) rotate(-90deg);
+}

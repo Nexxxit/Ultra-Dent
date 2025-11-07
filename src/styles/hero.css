@@ -1,0 +1,81 @@
+.timer {
+    display: flex;
+    flex-direction: column;
+    max-width: 361px;
+    width: 100%;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+}
+
+.timer__title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.time__title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.time__grid {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.time__cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 8px;
+    padding: 8px 18px;
+    background-color: white;
+    color: var(--timer-color);
+}
+
+.time__cell--separator {
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--timer-color);
+}
+
+.time__cell--days {
+    width: 59px;
+}
+
+.time__cell--hours {
+    width: 59px;
+}
+
+.time__cell--minutes {
+    width: 59px;
+}
+
+.time__cell--seconds {
+    width: 100%;
+}
+
+.time__value {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.time__unit {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.time__coupons-left {
+    font-weight: 600;
+    font-size: 16px;
+}
