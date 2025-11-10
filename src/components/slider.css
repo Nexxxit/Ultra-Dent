@@ -1,0 +1,161 @@
+.slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.slider__viewports {
+    width: 100%;
+    overflow: hidden;
+    touch-action: pan-y;
+}
+
+.slider__track {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    will-change: transform;
+    transition: transform .35s ease;
+}
+
+.slider__slide {
+    flex: 0 0 auto;
+}
+
+.slider__card {
+    display: flex;
+    flex-direction: column;
+    width: 395px;
+    background-color: white;
+    border: 1px solid rgba(255, 119, 0, 1);
+    border-radius: 40px;
+    padding: 32px;
+    gap: 32px;
+}
+
+.slider__card-title {
+    font-weight: 600;
+    font-size: 32px;
+    color: rgba(47, 107, 234, 1);
+}
+
+.slider__card-rating-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.slider__card-rating-date {
+    font-weight: 600;
+    font-size: 22px;
+    color: rgba(181, 181, 181, 1);
+}
+
+.slider__card-rating {
+    display: flex;
+    gap: 10px;
+}
+
+.slider__card-text {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(34, 34, 34, 1);
+}
+
+.slider__nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.slider__nav .prev,
+.slider__nav .next {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: rgba(34, 34, 34, 1);
+}
+
+.slider__nav .prev::before,
+.slider__nav .next::before {
+    content: "";
+    position: absolute;
+    background-color: currentColor;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.slider__nav .prev::before {
+    -webkit-mask-image: url("../assets/icons/west.svg");
+    mask-image: url("../assets/icons/west.svg");
+}
+
+.slider__nav .next::before {
+    -webkit-mask-image: url("../assets/icons/east.svg");
+    mask-image: url("../assets/icons/east.svg");
+}
+
+.slider__nav .prev:hover,
+.slider__nav .next:hover {
+    color: rgba(255, 119, 0, 1);
+}
+
+.slider__nav .prev:active,
+.slider__nav .next:active {
+    color: rgba(255, 119, 0, 1);
+}
+
+.slider__nav .prev[disabled],
+.slider__nav .next[disabled] {
+    opacity: 0.15;
+    cursor: default;
+}
+
+.slider__pagination {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slider__bullet {
+    width: 9px;
+    height: 22px;
+    font-size: 18px;
+    color: var(--title-text);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slider__bullet .is-active {
+    font-weight: 700;
+    color: rgba(255, 119, 0, 1);
+}
+
+.slider.is-dragging .slider__track {
+    transition: none;
+}
+.slider__viewports {
+    cursor: grab;
+    user-select: none;
+}
+.slider.is-dragging .slider__viewports {
+    cursor: grabbing;
+}
