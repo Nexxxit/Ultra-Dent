@@ -1,0 +1,11 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.feedback__title {
+    text-align: center;
+    font-size: 42px;
+    color: rgba(255, 119, 0, 1);
+}
