@@ -1,0 +1,150 @@
+.timer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 361px;
+    top:22px;
+    width: 100%;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer__title {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.time__title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.time__grid {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.time__cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 8px;
+    padding: 8px 18px;
+    background-color: white;
+    color: var(--timer-color);
+}
+
+.time__cell--separator {
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--timer-color);
+}
+
+.time__cell--days,
+.time__cell--hours,
+.time__cell--minutes {
+    width: 59px;
+}
+
+.time__cell--seconds {
+    width: auto;
+}
+
+.time__value {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.time__unit {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.time__coupons-left {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@media (min-width: 393px) {
+    .timer {
+        top: 25px;
+    }
+
+    .time {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        width: 100%;
+        max-width: 866px;
+    }
+
+    .timer__title,
+    .time__title,
+    .time__coupons-left {
+        white-space: nowrap;
+    }
+
+    .time__value {
+        font-size: 28px;
+    }
+
+    .time__cell--days,
+    .time__cell--hours,
+    .time__cell--minutes {
+        width: 71px;
+    }
+
+    .time__cell--seconds {
+        width: auto;
+    }
+}
+
+@media (min-width: 1194px) {
+    .timer__title,
+    .time__title,
+    .time__coupons-left {
+        font-size: 18px;
+    }
+
+    .time {
+        max-width: 1071px;
+        width: 100%;
+    }
+
+    .time__value {
+        font-size: 32px;
+    }
+
+    .time__unit {
+        font-size: 14px;
+    }
+
+
+    .time__cell--days,
+    .time__cell--hours,
+    .time__cell--minutes {
+        width: 114px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .timer {
+        position: absolute;
+        top: 122px;
+        gap: 32px;
+    }
+}
