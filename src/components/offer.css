@@ -1,0 +1,112 @@
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer__text {
+    position: absolute;
+    top: 469px;
+    z-index: 100;
+    border-bottom: 1px solid rgba(104, 104, 104, 1);
+    padding-bottom: 16px;
+    max-width: 361px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.offer__text-premium {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.offer__cta {
+    position: absolute;
+    top: 558px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 204, 0, 1);
+    padding: 8px 8px 8px 24px;
+    max-width: 361px;
+    width: 100%;
+    color: rgba(34, 34, 34, 1);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.offer__cta:active {
+    justify-content: space-around;
+    font-size: 18px;
+    background-color: rgba(250, 200, 0, 1);
+}
+
+.offer__cta-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: var(--primary);
+}
+
+@media (hover: hover) {
+    .offer__cta:hover {
+        background-color: rgba(255, 219, 73, 1);
+    }
+}
+
+
+@media (min-width: 393px) {
+    .offer__text {
+        position: absolute;
+        width: 280px;
+        top: 336px;
+        left: 899px;
+        padding-bottom: 32px;
+    }
+
+    .offer__cta {
+        position: absolute;
+        top: 469px;
+        left: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 282px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1194px) {
+    .offer__cta {
+        position: absolute;
+        top: 531px;
+        left: 74px;
+    }
+
+    .offer__text {
+        position: absolute;
+        top: 467px;
+        left: 1085px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .offer__cta {
+        position: absolute;
+        top: 614px;
+        left: 140px;
+    }
+
+    .offer__text {
+        position: absolute;
+        top: 584px;
+        left: 1385px;
+        width: 395px;
+    }
+}
