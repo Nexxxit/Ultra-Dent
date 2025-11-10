@@ -3,12 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 22px;
     flex-wrap: wrap;
     gap: 15px;
-    margin-bottom: 22px;
-    z-index: 1000;
-    width: 361px;
+    top: 12px;
+    max-width: 361px;
+    width: 100%;
 }
 
 .head__logo {
@@ -20,7 +19,7 @@
     display: none;
     position: absolute;
     right: 0;
-    top: 70px;
+    top: 50px;
     z-index: 1001;
     flex-direction: column;
     max-width: 361px;
@@ -50,123 +49,12 @@
     transform: scale(1) rotate(0);
 }
 
-.nav__list {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding-left: 0;
-    flex: 1;
-    gap: 16px;
-    list-style: none;
-}
-
-.nav__toggle {
-    position: relative;
-    z-index: 1002;
-    inline-size: 40px;
-    block-size: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 79px;
-    height: 40px;
-    color: white;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.nav__item {
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--text-muted-color);
-    padding: 6px 16px;
-}
-
-.work-time {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.work-time__icon {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-color: var(--text-muted-color);
-    -webkit-mask: url("../assets/icons/watch_later.svg");
-    mask: url("../assets/icons/watch_later.svg");
-}
-
-.work-time__text {
-    font-size: 16px;
-    color: var(--text-muted-color);
-    width: 220px;
-}
-
-.work-time__label {
-    font-weight: 300;
-    text-align: left;
-    display: block;
-}
-
-.work-time__value {
-    display: block;
-    font-weight: 600;
-}
-
-.work-time--header {
-    display: none;
-}
-
-.nav__buttons {
-    display: contents;
-}
-
 .head__panel .work-time {
     display: flex;
 }
 
-.submit-application {
-    height: 40px;
-    width: 100%;
-    padding: 6px 32px;
-}
-
 .head > .submit-application {
     display: none;
-}
-
-.burger {
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    inline-size: 22px;
-    block-size: 14px;
-    visibility: visible;
-}
-
-.burger > span {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: white;
-    border-radius: 2px;
-    transform-origin: 50% 50%;
-    transition: top .25s ease, transform .25s ease, opacity .2s ease;
-}
-
-.burger > span:nth-child(1) {
-    top: 0;
-    transform: translateX(var(--burger-offset))
-}
-
-.burger > span:nth-child(2) {
-    top: 6px
-}
-
-.burger > span:nth-child(3) {
-    top: 12px;
-    transform: translateX(calc(-1 * var(--burger-offset)))
 }
 
 .head.is-open .burger {
@@ -190,22 +78,15 @@
     .head {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 22px;
         flex-wrap: nowrap;
         gap: 16px;
-        width: 1162px;
+        max-width: 1162px;
+        width: 100%;
     }
 
     .head__logo {
         width: 162px;
         height: 36px;
-    }
-
-    .nav__toggle {
-        width: 131px;
-        margin-left: 0;
-        margin-right: 0;
-        order: 4;
     }
 
     .head > .submit-application {
@@ -217,17 +98,8 @@
         white-space: nowrap;
     }
 
-    .work-time--header {
-        display: flex;
-    }
-
     .head__panel .work-time {
         display: none;
-    }
-
-    .buttons {
-        display: flex;
-        gap: 16px;
     }
 }
 
@@ -238,7 +110,8 @@
         margin-bottom: 22px;
         flex-wrap: nowrap;
         gap: 16px;
-        width: 1408px;
+        max-width: 1408px;
+        width: 100%;
     }
 
     .head__panel {
@@ -260,26 +133,6 @@
         gap: 24px;
     }
 
-    .nav__list {
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .nav__item {
-        padding: 4px 12px;
-        font-weight: 600;
-        font-size: 15px;
-    }
-
-    .nav__toggle {
-        display: none;
-    }
-
-    .buttons {
-        display: none;
-    }
-
     .head .work-time--header {
         display: none;
     }
@@ -291,25 +144,17 @@
     .head__panel .submit-application {
         width: auto;
     }
-
-    .work-time--header {
-        display: flex;
-    }
-
-    .laptop_question {
-        display: inline-block;
-    }
 }
 
 @media (min-width: 1440px) {
-
     .head {
         display: flex;
         justify-content: space-between;
         margin-bottom: 22px;
         flex-wrap: nowrap;
         gap: 16px;
-        width: 1640px;
+        max-width: 1640px;
+        width: 100%;
     }
 
     .head__panel {
@@ -319,22 +164,5 @@
     .head__logo {
         max-width: 181px;
         max-height: 40px;
-    }
-
-    .laptop_question {
-        display: none;
-    }
-
-    .nav__toggle {
-        display: none;
-    }
-
-    .nav__list {
-        gap: 7px;
-    }
-
-    .nav__item {
-        font-size: 16px;
-        padding: 6px 16px;
     }
 }
