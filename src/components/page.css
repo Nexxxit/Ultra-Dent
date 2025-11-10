@@ -1,0 +1,10 @@
+.page__sections {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    position: absolute;
+    top: 1271px;
+    left: 25px;
+    max-width: 1408px;
+    width: 100%;
+}
