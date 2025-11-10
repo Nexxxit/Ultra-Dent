@@ -1,0 +1,48 @@
+.work-time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.work-time__icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: var(--text-muted-color);
+    -webkit-mask: url("../assets/icons/watch_later.svg");
+    mask: url("../assets/icons/watch_later.svg");
+}
+
+.work-time__text {
+    font-size: 16px;
+    color: var(--text-muted-color);
+    width: 220px;
+}
+
+.work-time__label {
+    font-weight: 300;
+    text-align: left;
+    display: block;
+}
+
+.work-time__value {
+    display: block;
+    font-weight: 600;
+}
+
+.work-time--header {
+    display: none;
+}
+
+@media (min-width: 393px) {
+    .work-time--header {
+        display: flex;
+    }
+}
+
+@media (min-width: 1194px) {
+    .work-time--header {
+        display: flex;
+    }
+}
+
