@@ -1,0 +1,257 @@
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    width: fit-content;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: var(--title-text);
+}
+
+.title:nth-child(1) {
+    top: 401px;
+    left: 103px;
+    z-index: 20;
+}
+
+.title:nth-child(2) {
+    top: 439.01px;
+    left: 17.67px;
+    z-index: 10;
+}
+
+.title:nth-child(3) {
+    top: 476px;
+    left: 183px;
+    z-index: 30;
+}
+
+.title--pill {
+    background-color: var(--bg-title-pill);
+    border-radius: 32px;
+}
+
+.title--rotate-left-2deg {
+    transform: rotate(-2deg);
+}
+
+.title--rotate-right-4deg {
+    transform: rotate(4deg);
+}
+
+.title--rotate-right-2deg {
+    transform: rotate(2deg);
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer__text {
+    position: absolute;
+    top: 626px;
+    z-index: 100;
+    border-bottom: 1px solid rgba(104, 104, 104, 1);
+    padding-bottom: 16px;
+    max-width: 361px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.offer__text-premium {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.offer__cta {
+    position: absolute;
+    top: 715px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 204, 0, 1);
+    padding: 8px 8px 8px 24px;
+    max-width: 361px;
+    width: 100%;
+    color: rgba(34, 34, 34, 1);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+@media (hover: hover) {
+    .offer__cta:hover {
+        background-color: rgba(255, 219, 73, 1);
+    }
+}
+
+.offer__cta:active {
+    justify-content: space-around;
+    font-size: 18px;
+    background-color: rgba(250, 200, 0, 1);
+}
+
+.offer__cta-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: var(--primary);
+}
+
+.icon--arrow {
+    background-color: rgba(34, 34, 34, 1);
+    -webkit-mask: url('../assets/icons/arrow.svg') center/contain no-repeat;
+    mask: url('../assets/icons/arrow.svg') center/contain no-repeat;
+}
+
+@media (min-width: 393px) {
+
+
+    .title {
+        font-size: 32px;
+        padding: 12px 32px;
+    }
+
+    .title:nth-child(1) {
+        position: absolute;
+        top: 199px;
+        left: 426.08px;
+        z-index: 20;
+    }
+
+    .title:nth-child(2) {
+        position: absolute;
+        top: 247px;
+        left: 275.07px;
+        z-index: 10;
+    }
+
+    .title:nth-child(3) {
+        position: absolute;
+        top: 306px;
+        left: 572.47px;
+        z-index: 30;
+    }
+
+    .offer__text {
+        position: absolute;
+        width: 280px;
+        top: 398px;
+        left: 899px;
+        padding-bottom: 32px;
+    }
+
+    .offer__cta {
+        position: absolute;
+        top: 531px;
+        left: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 282px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1194px) {
+
+
+    .title {
+        font-size: 50px;
+        padding: 12px 32px;
+    }
+
+    .title:nth-child(1) {
+        position: absolute;
+        top: 221px;
+        left: 473px;
+        z-index: 20;
+    }
+
+    .title:nth-child(2) {
+        position: absolute;
+        top: 287px;
+        left: 237.03px;
+        z-index: 10;
+    }
+
+    .title:nth-child(3) {
+        position: absolute;
+        top: 373px;
+        left: 651.01px;
+        z-index: 30;
+    }
+
+    .offer__cta {
+        position: absolute;
+        top: 531px;
+        left: 74px;
+    }
+
+    .offer__text {
+        position: absolute;
+        top: 467px;
+        left: 1085px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+
+    .title {
+        font-size: 50px;
+        padding: 12px 32px;
+    }
+
+    .title:nth-child(1) {
+        position: absolute;
+        top: 329px;
+        left: 758px;
+        z-index: 20;
+    }
+
+    .title:nth-child(2) {
+        position: absolute;
+        top: 395px;
+        left: 413px;
+        z-index: 10;
+    }
+
+    .title:nth-child(3) {
+        position: absolute;
+        top: 481px;
+        left: 909px;
+        z-index: 30;
+    }
+
+    .offer__cta {
+        position: absolute;
+        top: 614px;
+        left: 140px;
+    }
+
+    .offer__text {
+        position: absolute;
+        top: 584px;
+        left: 1385px;
+        width: 395px;
+    }
+}
