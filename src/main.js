@@ -1,9 +1,10 @@
-import './styles/index.css';
+import './components/index.css';
 import {timer} from "./scripts/timer.js";
+import {slider} from "./scripts/slider.js";
 
 const head = document.querySelector('.head');
 if (head) {
-    const toggle = head.querySelector('.nav__toggle');
+    const toggle = head.querySelector('.nav-buttons__toggle');
     const panel = head.querySelector('.head__panel')
 
     const setOpen = (v) => {
@@ -25,4 +26,6 @@ if (head) {
 }
 
 timer({days: 5, hours: 2, minutes: 29, seconds: 46});
+
+slider();
 
